@@ -1,0 +1,652 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilian Perkasa - Pemimpin Industri Kelapa Sawit</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Wilian Perkasa adalah perusahaan terkemuka di bidang perkebunan dan industri kelapa sawit di Provinsi Riau.">
+    <meta name="keywords" content="Kelapa Sawit, Minyak Sawit, Perkebunan, Industri Kelapa Sawit, Wilian Perkasa, Riau">
+    <meta name="author" content="Wilian Perkasa">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Wilian Perkasa - Pemimpin Industri Kelapa Sawit">
+    <meta property="og:description" content="Wilian Perkasa adalah perusahaan terkemuka di bidang perkebunan dan industri kelapa sawit di Provinsi Riau.">
+    <meta property="og:image" content="https://www.odoo.com/id_ID/static/images/logo.png">
+    <meta property="og:url" content="http://www.wilianperkasa.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wilian Perkasa - Pemimpin Industri Kelapa Sawit">
+    <meta name="twitter:description" content="Wilian Perkasa adalah perusahaan terkemuka di bidang perkebunan dan industri kelapa sawit di Provinsi Riau.">
+    <meta name="twitter:image" content="https://www.odoo.com/id_ID/static/images/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-dPhkO6Yc9iYrwROz9HpeHtYkZgM/wr84QvGiqx9CxM6mYrPRbDVXYC9/nZ6hD6XfVDEm6vV5/TIu2CkX7LxG6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Swiper.js CSS untuk Slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Slick Carousel CSS untuk Gallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-YcGZw0dycNb70o4F3l5Z+RrM1APtaI+jVUXpAtICtSK5x5QbXqZBGyyuOQHtOaD2UsBcXcD0C3b3GPOJv2trbw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFX4CkZn8rUihCnS5Vn0k1FcbGkSkF7G15uKnml3LC+5iX6AewjT4A9jXEKb3PPz4/gjG6o4Ypfrl4S/bQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Lightbox2 CSS untuk Galeri Foto -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- CSS Kustom -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://www.odoo.com/id_ID/static/images/logo.png" type="image/png">
+</head>
+<body>
+
+    <!-- 1. Header dengan Navbar -->
+    <header id="home" class="bg-black">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow-sm">
+            <div class="container">
+                <!-- Logo Wilian Perkasa -->
+                <a class="navbar-brand" href="#">
+                    <img src="https://www.odoo.com/id_ID/static/images/logo.png" alt="Wilian Perkasa Logo" width="50" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav fw-semibold">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home"><i class="fas fa-home me-1"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services"><i class="fas fa-concierge-bell me-1"></i> Layanan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about"><i class="fas fa-info-circle me-1"></i> Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio"><i class="fas fa-briefcase me-1"></i> Portofolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials"><i class="fas fa-comments me-1"></i> Testimoni</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog"><i class="fas fa-blog me-1"></i> Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i> Kontak</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="darkModeToggle" class="btn btn-outline-light ms-3" aria-label="Toggle Dark Mode"><i class="fas fa-sun"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <div class="hero-section d-flex align-items-center justify-content-center" style="background: url('https://images.unsplash.com/photo-1557683316-973673baf926?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDl8fGZpbmFuY2V8ZW58MHx8fHwxNjc5MDU1MTU2&ixlib=rb-4.0.3&q=80&w=1920') center center/cover no-repeat;">
+            <div class="overlay"></div>
+            <div class="text-center text-white position-relative fade-in" data-aos="fade-up" data-aos-duration="1500">
+                <h1 class="display-4 fw-bold">Wilian Perkasa</h1>
+                <p class="lead">be Wise be Excellent</p>
+                <p class="mb-4">Minyak dan Gas | Pekanbaru, Riau</p>
+                <a href="#services" class="btn btn-e8d135 btn-lg fade-in-text"><i class="fas fa-concierge-bell me-2"></i> Lihat Layanan Kami</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Tentang Kami -->
+    <section id="about" class="py-5 bg-black text-white">
+        <div class="container">
+            <h2 class="text-center mb-4 fade-in-text" data-aos="fade-down">Tentang Kami</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="https://images.unsplash.com/photo-1617181631968-d59dc0ae4c44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGZpbmFuY2V8ZW58MHx8fHwxNjc5MDQ3NjI1&ixlib=rb-4.0.3&q=80&w=800" alt="Tim Wilian Perkasa" class="img-fluid rounded shadow-lg fade-in-text">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <p class="fade-in-text">Wilian Perkasa adalah perusahaan yang bergerak di bidang perkebunan dan industri kelapa sawit di Provinsi Riau. Dengan pengalaman lebih dari 10 tahun, kami telah berkembang menjadi salah satu pemimpin industri di wilayah ini. Kami memiliki komitmen kuat terhadap keberlanjutan dan tanggung jawab lingkungan, memastikan bahwa setiap langkah operasional kami memberikan dampak positif bagi masyarakat dan alam sekitar.</p>
+                    <p class="fade-in-text">Visi kami adalah menjadi perusahaan kelapa sawit terdepan yang tidak hanya fokus pada pertumbuhan ekonomi, tetapi juga pada pelestarian lingkungan dan peningkatan kesejahteraan masyarakat. Melalui inovasi teknologi dan praktik terbaik dalam pengelolaan perkebunan, kami berusaha untuk mencapai efisiensi maksimal dalam produksi sambil menjaga kualitas dan keberlanjutan sumber daya alam.</p>
+                    <h5 class="mt-4 mb-3 fade-in-text">Misi Kami:</h5>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item bg-black text-white d-flex align-items-center fade-in-text">
+                            <i class="fas fa-leaf me-3 text-e8d135"></i>
+                            <span>Menyediakan produk kelapa sawit berkualitas tinggi melalui proses pengolahan yang efisien dan ramah lingkungan.</span>
+                        </li>
+                        <li class="list-group-item bg-black text-white d-flex align-items-center fade-in-text">
+                            <i class="fas fa-handshake me-3 text-e8d135"></i>
+                            <span>Membangun kemitraan yang kuat dengan para petani dan mitra bisnis untuk pertumbuhan bersama.</span>
+                        </li>
+                        <li class="list-group-item bg-black text-white d-flex align-items-center fade-in-text">
+                            <i class="fas fa-seedling me-3 text-e8d135"></i>
+                            <span>Mengimplementasikan teknologi inovatif dalam pengelolaan perkebunan untuk meningkatkan produktivitas dan keberlanjutan.</span>
+                        </li>
+                        <li class="list-group-item bg-black text-white d-flex align-items-center fade-in-text">
+                            <i class="fas fa-users me-3 text-e8d135"></i>
+                            <span>Menyediakan lingkungan kerja yang aman, sehat, dan mendukung pengembangan karyawan.</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-ca4e33 fade-in-text"><i class="fas fa-arrow-right me-2"></i> Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Layanan -->
+    <section id="services" class="py-5 bg-black text-white">
+        <div class="container">
+            <h2 class="text-center mb-4 fade-in-text" data-aos="fade-down">Layanan Kami</h2>
+            <div class="row">
+                <!-- Contoh Layanan -->
+                <div class="col-md-4 text-center mb-4" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="service-box p-4 rounded shadow-lg fade-in-text">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-industry fa-3x text-e8d135"></i>
+                        </div>
+                        <h4 class="mb-2">Pengolahan Kelapa Sawit</h4>
+                        <p>Proses pengolahan kelapa sawit menjadi minyak sawit berkualitas tinggi dengan teknologi modern.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="service-box p-4 rounded shadow-lg fade-in-text">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-seedling fa-3x text-ca4e33"></i>
+                        </div>
+                        <h4 class="mb-2">Perkebunan</h4>
+                        <p>Pengelolaan perkebunan kelapa sawit yang efisien dan ramah lingkungan untuk hasil maksimal.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4" data-aos="zoom-in" data-aos-duration="1400">
+                    <div class="service-box p-4 rounded shadow-lg fade-in-text">
+                        <div class="service-icon mb-3">
+                            <i class="fas fa-truck fa-3x text-1d5669"></i>
+                        </div>
+                        <h4 class="mb-2">Distribusi</h4>
+                        <p>Distribusi minyak sawit ke berbagai pasar domestik dan internasional dengan jaringan luas.</p>
+                    </div>
+                </div>
+                <!-- Tambahkan layanan lainnya sesuai kebutuhan -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Portofolio atau Studi Kasus -->
+    <section id="portfolio" class="py-5 bg-black text-white">
+        <div class="container">
+            <h2 class="text-center mb-4 fade-in-text" data-aos="fade-down">Portofolio Kami</h2>
+            <!-- Filter Portofolio -->
+            <div class="text-center mb-4" data-aos="fade-up" data-aos-duration="1000">
+                <button class="btn btn-outline-e8d135 active filter-button" data-filter="all"><i class="fas fa-th-large me-1"></i> Semua</button>
+                <button class="btn btn-outline-e8d135 filter-button" data-filter="pengolahan"><i class="fas fa-industry me-1"></i> Pengolahan</button>
+                <button class="btn btn-outline-e8d135 filter-button" data-filter="perkebunan"><i class="fas fa-seedling me-1"></i> Perkebunan</button>
+                <button class="btn btn-outline-e8d135 filter-button" data-filter="distribusi"><i class="fas fa-truck me-1"></i> Distribusi</button>
+            </div>
+            <div class="row portfolio-container">
+                <!-- Contoh Portofolio -->
+                <div class="col-md-4 mb-4 portfolio-item pengolahan" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card h-100 shadow-sm bg-ca4e33 text-white blog-card">
+                        <img src="https://images.unsplash.com/photo-1603126858514-56a1aebc1283?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGZpbmFuY2V8ZW58MHx8fHwxNjc5MDQ4MDM5&ixlib=rb-4.0.3&q=80&w=800" class="card-img-top" alt="Proyek Pengolahan Kelapa Sawit">
+                        <div class="card-body">
+                            <h5 class="card-title">Pabrik Pengolahan Kelapa Sawit</h5>
+                            <p class="card-text">Pembangunan dan operasional pabrik pengolahan kelapa sawit di Riau dengan teknologi terkini.</p>
+                            <a href="#" class="btn btn-e8d135 btn-sm" data-bs-toggle="modal" data-bs-target="#portfolioModal1"><i class="fas fa-eye me-1"></i> Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 portfolio-item perkebunan" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="card h-100 shadow-sm bg-ca4e33 text-white blog-card">
+                        <img src="https://images.unsplash.com/photo-1589831403623-1c9fdf8e1f2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDN8fHBsYW1vdW58ZW58MHx8fHwxNjc5MDQ4MTM4&ixlib=rb-4.0.3&q=80&w=800" class="card-img-top" alt="Proyek Perkebunan">
+                        <div class="card-body">
+                            <h5 class="card-title">Pengelolaan Perkebunan Rejosari</h5>
+                            <p class="card-text">Pengelolaan perkebunan kelapa sawit yang berkelanjutan di Rejosari dengan praktik ramah lingkungan.</p>
+                            <a href="#" class="btn btn-e8d135 btn-sm" data-bs-toggle="modal" data-bs-target="#portfolioModal2"><i class="fas fa-eye me-1"></i> Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 portfolio-item distribusi" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="card h-100 shadow-sm bg-ca4e33 text-white blog-card">
+                        <img src="https://images.unsplash.com/photo-1581349486363-8d1dd665c8d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGRpc3RyaWJ1c3l8ZW58MHx8fHwxNjc5MDU1NTk3&ixlib=rb-4.0.3&q=80&w=800" class="card-img-top" alt="Proyek Distribusi">
+                        <div class="card-body">
+                            <h5 class="card-title">Distribusi Minyak Sawit</h5>
+                            <p class="card-text">Distribusi minyak sawit ke berbagai negara di Asia Tenggara melalui jaringan logistik yang luas.</p>
+                            <a href="#" class="btn btn-e8d135 btn-sm" data-bs-toggle="modal" data-bs-target="#portfolioModal3"><i class="fas fa-eye me-1"></i> Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tambahkan portofolio lainnya -->
+            </div>
+        </div>
+
+        <!-- Modal Portofolio 1 -->
+        <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content bg-black text-white">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModalLabel1">Pabrik Pengolahan Kelapa Sawit</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://images.unsplash.com/photo-1603126858514-56a1aebc1283?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGZpbmFuY2V8ZW58MHx8fHwxNjc5MDQ4MDM5&ixlib=rb-4.0.3&q=80&w=800" alt="Pabrik Pengolahan Kelapa Sawit" class="img-fluid mb-3">
+                        <p>Deskripsi mendalam tentang proyek pengolahan kelapa sawit, termasuk proses, teknologi yang digunakan, dan dampaknya terhadap industri serta lingkungan.</p>
+                        <ul>
+                            <li>Pembangunan pabrik dengan kapasitas produksi tinggi.</li>
+                            <li>Implementasi teknologi ramah lingkungan.</li>
+                            <li>Dampak positif terhadap ekonomi lokal.</li>
+                            <li>Standar keamanan dan kualitas internasional.</li>
+                        </ul>
+                        <a href="https://www.youtube.com/watch?v=video1" target="_blank" class="btn btn-e8d135"><i class="fas fa-video me-1"></i> Lihat Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Portofolio 2 -->
+        <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content bg-black text-white">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModalLabel2">Pengelolaan Perkebunan Rejosari</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://images.unsplash.com/photo-1589831403623-1c9fdf8e1f2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDN8fHBsYW1vdW58ZW58MHx8fHwxNjc5MDQ4MTM4&ixlib=rb-4.0.3&q=80&w=800" alt="Pengelolaan Perkebunan Rejosari" class="img-fluid mb-3">
+                        <p>Deskripsi mendalam tentang pengelolaan perkebunan kelapa sawit yang berkelanjutan di Rejosari, termasuk strategi keberlanjutan dan pencapaian perusahaan dalam proyek ini.</p>
+                        <ul>
+                            <li>Metode pengelolaan ramah lingkungan.</li>
+                            <li>Peningkatan produktivitas tanaman sawit.</li>
+                            <li>Program kesejahteraan bagi pekerja dan masyarakat lokal.</li>
+                            <li>Penggunaan teknologi monitoring terbaru.</li>
+                        </ul>
+                        <a href="https://www.youtube.com/watch?v=video2" target="_blank" class="btn btn-e8d135"><i class="fas fa-video me-1"></i> Lihat Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Portofolio 3 -->
+        <div class="modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content bg-black text-white">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModalLabel3">Distribusi Minyak Sawit</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="https://images.unsplash.com/photo-1581349486363-8d1dd665c8d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGRpc3RyaWJ1c3l8ZW58MHx8fHwxNjc5MDU1NTk3&ixlib=rb-4.0.3&q=80&w=800" alt="Distribusi Minyak Sawit" class="img-fluid mb-3">
+                        <p>Deskripsi mendalam tentang proses distribusi minyak sawit ke pasar domestik dan internasional, termasuk jaringan logistik dan kerjasama strategis.</p>
+                        <ul>
+                            <li>Jaringan distribusi luas di Asia Tenggara.</li>
+                            <li>Kerjasama dengan mitra strategis di berbagai negara.</li>
+                            <li>Optimasi proses logistik untuk efisiensi tinggi.</li>
+                            <li>Sistem pelacakan pengiriman real-time.</li>
+                        </ul>
+                        <a href="https://www.youtube.com/watch?v=video3" target="_blank" class="btn btn-e8d135"><i class="fas fa-video me-1"></i> Lihat Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Statistik Perusahaan -->
+    <section id="statistics" class="py-5 bg-black text-white">
+        <div class="container">
+            <h2 class="text-center mb-4 fade-in-text" data-aos="fade-down">Statistik Perusahaan</h2>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <i class="fas fa-building fa-3x text-e8d135 mb-3"></i>
+                    <h3 class="count" data-count="10">0</h3>
+                    <p>Tahun Berdiri</p>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1200">
+                    <i class="fas fa-tree fa-3x text-ca4e33 mb-3"></i>
+                    <h3 class="count" data-count="500">0</h3>
+                    <p>Lahan Perkebunan</p>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1400">
+                    <i class="fas fa-truck fa-3x text-1d5669 mb-3"></i>
+                    <h3 class="count" data-count="50">0</h3>
+                    <p>Armada Distribusi</p>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1600">
+                    <i class="fas fa-users fa-3x text-e8d135 mb-3"></i>
+                    <h3 class="count" data-count="1000">0</h3>
+                    <p>Karyawan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Testimoni -->
+    <section id="testimonials" class="py-5 bg-black text-white">
+        <div class="container">
+            <h2 class="text-center mb-4 fade-in-text" data-aos="fade-down">Testimoni Klien</h2>
+            <!-- Swiper -->
+            <div class="swiper-container testimonials-slider" data-aos="fade-up" data-aos-duration="1000">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial p-4 bg-ca4e33 rounded shadow-sm">
+                            <p class="mb-0">"Wilian Perkasa telah memberikan layanan pengolahan kelapa sawit yang luar biasa dan profesional!"</p>
+                            <footer class="blockquote-footer mt-2">Budi Santoso <cite title="Source Title">PT. Agro Sejahtera</cite></footer>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial p-4 bg-ca4e33 rounded shadow-sm">
+                            <p class="mb-0">"Pengelolaan perkebunan yang efisien dan ramah lingkungan dari Wilian Perkasa sangat kami hargai."</p>
+                            <footer class="blockquote-footer mt-2">Siti Rahmawati <cite title="Source Title">CV. Green Palm</cite></footer>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial p-4 bg-ca4e33 rounded shadow-sm">
+                            <p class="mb-0">"Distribusi minyak sawit mereka sangat andal dan tepat waktu, membantu kami memenuhi kebutuhan pasar."</p>
+                            <footer class="blockquote-footer mt-2">Joko Prabowo <cite title="Source Title">PT. Palm Nusantara</cite></footer>
+                        </div>
+                    </div>
+                    <!-- Tambahkan testimoni lainnya -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Blog -->
+    <section id="blog" class="py-5 bg-black text-white">
+        <div class="container">
+            <h2 class="text-center mb-4 fade-in-text" data-aos="fade-down">Blog Terbaru</h2>
+            <div class="row">
+                <!-- Contoh Blog Post -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card h-100 shadow-sm bg-ca4e33 text-white blog-card">
+                        <img src="https://images.unsplash.com/photo-1603161631783-bddf2e69f00d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDN8fGJsb2d8ZW58MHx8fHwxNjc5MDU1MzA3&ixlib=rb-4.0.3&q=80&w=800" class="card-img-top" alt="Manfaat Teknologi Modern dalam Pengolahan Kelapa Sawit">
+                        <div class="card-body">
+                            <h5 class="card-title">Manfaat Teknologi Modern dalam Pengolahan Kelapa Sawit</h5>
+                            <p class="card-text">Mengulas bagaimana teknologi terkini meningkatkan efisiensi dan kualitas produksi minyak sawit.</p>
+                            <a href="#" class="btn btn-e8d135 btn-sm"><i class="fas fa-readme me-1"></i> Baca Selengkapnya</a>
+                        </div>
+                        <div class="card-footer bg-ca4e33">
+                            <small class="text-muted"><i class="fas fa-calendar-alt me-1"></i> 20 Januari 2025</small>
+                            <span class="float-end"><i class="fas fa-user me-1"></i> Admin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="card h-100 shadow-sm bg-ca4e33 text-white blog-card">
+                        <img src="https://images.unsplash.com/photo-1589831403623-1c9fdf8e1f2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDN8fHBsYW1vdW58ZW58MHx8fHwxNjc5MDU1MzA3&ixlib=rb-4.0.3&q=80&w=800" class="card-img-top" alt="Strategi Pengelolaan Perkebunan Berkelanjutan">
+                        <div class="card-body">
+                            <h5 class="card-title">Strategi Pengelolaan Perkebunan Berkelanjutan</h5>
+                            <p class="card-text">Diskusi mengenai praktik terbaik dalam mengelola perkebunan kelapa sawit secara berkelanjutan.</p>
+                            <a href="#" class="btn btn-e8d135 btn-sm"><i class="fas fa-readme me-1"></i> Baca Selengkapnya</a>
+                        </div>
+                        <div class="card-footer bg-ca4e33">
+                            <small class="text-muted"><i class="fas fa-calendar-alt me-1"></i> 15 Januari 2025</small>
+                            <span class="float-end"><i class="fas fa-user me-1"></i> Admin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1400">
+                    <div class="card h-100 shadow-sm bg-ca4e33 text-white blog-card">
+                        <img src="https://images.unsplash.com/photo-1563144051-8369ff66a9e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGJsb2d8ZW58MHx8fHwxNjc5MDU1MzA3&ixlib=rb-4.0.3&q=80&w=800" class="card-img-top" alt="Inovasi dalam Distribusi Minyak Sawit">
+                        <div class="card-body">
+                            <h5 class="card-title">Inovasi dalam Distribusi Minyak Sawit</h5>
+                            <p class="card-text">Membahas inovasi logistik yang meningkatkan distribusi minyak sawit ke pasar global.</p>
+                            <a href="#" class="btn btn-e8d135 btn-sm"><i class="fas fa-readme me-1"></i> Baca Selengkapnya</a>
+                        </div>
+                        <div class="card-footer bg-ca4e33">
+                            <small class="text-muted"><i class="fas fa-calendar-alt me-1"></i> 10 Januari 2025</small>
+                            <span class="float-end"><i class="fas fa-user me-1"></i> Admin</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tambahkan blog post lainnya -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Galeri Foto Interaktif -->
+    <section id="photo-gallery" class="py-5 bg-black text-white">
+        <div class="container">
+            <h2 class="text-center mb-4 fade-in-text" data-aos="fade-down">Galeri Foto</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="photo-card rounded shadow-sm blog-card">
+                        <a href="https://images.unsplash.com/photo-1602524209447-3be178b73d0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDV8fGZpbmFuY2V8ZW58MHx8fHwxNjc5MDU1NTk3&ixlib=rb-4.0.3&q=80&w=1200" data-lightbox="gallery" data-title="Pabrik Pengolahan Kelapa Sawit">
+                            <img src="https://images.unsplash.com/photo-1602524209447-3be178b73d0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDV8fGZpbmFuY2V8ZW58MHx8fHwxNjc5MDU1NTk3&ixlib=rb-4.0.3&q=80&w=400" alt="Pabrik Pengolahan Kelapa Sawit" class="img-fluid rounded photo-img">
+                            <div class="photo-overlay">
+                                <i class="fas fa-search fa-2x text-white"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1200">
+                    <div class="photo-card rounded shadow-sm blog-card">
+                        <a href="https://images.unsplash.com/photo-1589831403623-1c9fdf8e1f2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDN8fHBsYW1vdW58ZW58MHx8fHwxNjc5MDU1NTk3&ixlib=rb-4.0.3&q=80&w=1200" data-lightbox="gallery" data-title="Perkebunan Rejosari">
+                            <img src="https://images.unsplash.com/photo-1589831403623-1c9fdf8e1f2c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDN8fHBsYW1vdW58ZW58MHx8fHwxNjc5MDU1NTk3&ixlib=rb-4.0.3&q=80&w=400" alt="Perkebunan Rejosari" class="img-fluid rounded photo-img">
+                            <div class="photo-overlay">
+                                <i class="fas fa-search fa-2x text-white"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-duration="1400">
+                    <div class="photo-card rounded shadow-sm blog-card">
+                        <a href="https://images.unsplash.com/photo-1581349486363-8d1dd665c8d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGRpc3RyaWJ1c3l8ZW58MHx8fHwxNjc5MDU1NTk3&ixlib=rb-4.0.3&q=80&w=1200" data-lightbox="gallery" data-title="Distribusi Minyak Sawit">
+                            <img src="https://images.unsplash.com/photo-1581349486363-8d1dd665c8d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGRpc3RyaWJ1c3l8ZW58MHx8fHwxNjc5MDU1NTk3&ixlib=rb-4.0.3&q=80&w=400" alt="Distribusi Minyak Sawit" class="img-fluid rounded photo-img">
+                            <div class="photo-overlay">
+                                <i class="fas fa-search fa-2x text-white"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Tambahkan foto lainnya -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Galeri Video -->
+    <section id="video-gallery" class="py-5 bg-black text-white">
+        <div class="container">
+            <h2 class="text-center mb-4 fade-in-text" data-aos="fade-down">Galeri Video</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="ratio ratio-16x9 video-card rounded shadow-sm blog-card">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID1" title="Video 1" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="ratio ratio-16x9 video-card rounded shadow-sm blog-card">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID2" title="Video 2" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- Tambahkan video lainnya -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Kontak -->
+    <section id="contact" class="py-5 bg-black text-white">
+        <div class="container">
+            <h2 class="text-center mb-4 fade-in-text" data-aos="fade-down">Kontak Kami</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                    <form id="contactForm" class="bg-ca4e33 p-5 rounded shadow-lg contact-form-3d">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" class="form-control bg-black text-white border-0" id="name" name="name" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control bg-black text-white border-0" id="email" name="email" placeholder="Masukkan email Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subjek</label>
+                            <input type="text" class="form-control bg-black text-white border-0" id="subject" name="subject" placeholder="Masukkan subjek Anda" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Pesan</label>
+                            <textarea class="form-control bg-black text-white border-0" id="message" name="message" rows="5" placeholder="Masukkan pesan Anda" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-e8d135 w-100"><i class="fas fa-paper-plane me-1"></i> Kirim</button>
+                    </form>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="contact-info-3d p-4 rounded shadow-lg">
+                        <h5 class="mb-3"><i class="fas fa-info-circle me-2"></i> Informasi Kontak</h5>
+                        <p><i class="fas fa-globe me-2"></i> <a href="http://www.wilianperkasa.com" target="_blank" class="text-e8d135">www.wilianperkasa.com</a></p>
+                        <p><i class="fas fa-envelope me-2"></i> email@wilianperkasa.com</p>
+                        <p><i class="fas fa-phone me-2"></i> +62 123 4567 8901</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> Jalan Sail No.01 kel. Rejosari kec. Tenayan Raya, Pekanbaru, Riau 28281, ID</p>
+                        <!-- Peta Lokasi -->
+                        <div class="mt-3">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.687098354098!2d101.44792331447754!3d0.4831271991988916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304dc3b8c89db99b%3A0xb95d3dfbf4c5c6a2!2sJalan%20Sail%20No.01%2C%20Rejosari%2C%20Kec.%20Tenayan%20Raya%2C%20Pekanbaru%2C%20Riau%2028281!5e0!3m2!1sid!2sid!4v1685245474679!5m2!1sid!2sid" 
+                                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <!-- Media Sosial -->
+                        <div class="mt-4">
+                            <h5 class="mb-2"><i class="fas fa-share-alt me-2"></i> Ikuti Kami</h5>
+                            <a href="https://www.facebook.com/wilianperkasa" class="text-e8d135 me-3" aria-label="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+                            <a href="https://twitter.com/wilianperkasa" class="text-e8d135 me-3" aria-label="Twitter"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="https://www.instagram.com/wilianperkasa" class="text-e8d135 me-3" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="https://www.linkedin.com/company/wilianperkasa" class="text-e8d135" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                        <!-- Newsletter Subscription -->
+                        <div class="mt-4">
+                            <h5 class="mb-2"><i class="fas fa-newspaper me-2"></i> Langganan Newsletter</h5>
+                            <form id="newsletterFormFooter" class="d-flex">
+                                <input type="email" class="form-control me-2 bg-black text-white border-0" name="email" placeholder="Masukkan email Anda" required>
+                                <button type="submit" class="btn btn-e8d135"><i class="fas fa-paper-plane me-1"></i> Subscribe</button>
+                            </form>
+                        </div>
+                        <!-- Live Chat Widget -->
+                        <div class="mt-4">
+                            <h5 class="mb-2"><i class="fas fa-headset me-2"></i> Butuh Bantuan?</h5>
+                            <div>
+                                <a href="https://tawk.to/chat/YOUR_CHAT_ID/default" class="btn btn-outline-e8d135"><i class="fas fa-comments me-1"></i> Chat Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Data Visualization Charts -->
+    <section id="data-visualization" class="py-5 bg-black text-white">
+        <div class="container">
+            <h2 class="text-center mb-4 fade-in-text" data-aos="fade-down">Data Produksi Kami</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000">
+                    <canvas id="productionChart"></canvas>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="1200">
+                    <canvas id="distributionChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Footer -->
+    <footer class="bg-black text-white py-5 position-relative">
+        <div class="container">
+            <div class="row">
+                <!-- Logo dan Deskripsi Singkat -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="https://www.odoo.com/id_ID/static/images/logo.png" alt="Wilian Perkasa Logo" width="60" height="60" class="mb-3">
+                    <p>Wilian Perkasa adalah perusahaan terkemuka di bidang perkebunan dan industri kelapa sawit di Provinsi Riau. Kami berkomitmen untuk menyediakan produk berkualitas tinggi dan ramah lingkungan.</p>
+                    <div class="social-icons mt-3">
+                        <a href="https://www.facebook.com/wilianperkasa" class="text-e8d135 me-3" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="https://twitter.com/wilianperkasa" class="text-e8d135 me-3" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://www.instagram.com/wilianperkasa" class="text-e8d135 me-3" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://www.linkedin.com/company/wilianperkasa" class="text-e8d135" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+                <!-- Link Navigasi -->
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1200">
+                    <h5 class="mb-3">Navigasi</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-e8d135">Home</a></li>
+                        <li><a href="#services" class="text-e8d135">Layanan</a></li>
+                        <li><a href="#about" class="text-e8d135">Tentang Kami</a></li>
+                        <li><a href="#portfolio" class="text-e8d135">Portofolio</a></li>
+                        <li><a href="#testimonials" class="text-e8d135">Testimoni</a></li>
+                        <li><a href="#blog" class="text-e8d135">Blog</a></li>
+                        <li><a href="#contact" class="text-e8d135">Kontak</a></li>
+                    </ul>
+                </div>
+                <!-- Informasi Kontak -->
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-duration="1400">
+                    <h5 class="mb-3">Kontak</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i> email@wilianperkasa.com</li>
+                        <li><i class="fas fa-phone me-2"></i> +62 123 4567 8901</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Jalan Sail No.01 kel. Rejosari kec. Tenayan Raya, Pekanbaru, Riau 28281, ID</li>
+                    </ul>
+                    <!-- Peta Mini -->
+                    <div class="mt-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.687098354098!2d101.44792331447754!3d0.4831271991988916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304dc3b8c89db99b%3A0xb95d3dfbf4c5c6a2!2sJalan%20Sail%20No.01%2C%20Rejosari%2C%20Kec.%20Tenayan%20Raya%2C%20Pekanbaru%2C%20Riau%2028281!5e0!3m2!1sid!2sid!4v1685245474679!5m2!1sid!2sid" 
+                                width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <!-- Newsletter -->
+                <div class="col-md-2 mb-4" data-aos="fade-up" data-aos-duration="1600">
+                    <h5 class="mb-3">Newsletter</h5>
+                    <form id="newsletterFormFooter" class="d-flex flex-column">
+                        <input type="email" class="form-control mb-2 bg-black text-white border-0" name="email" placeholder="Email Anda" required>
+                        <button type="submit" class="btn btn-e8d135"><i class="fas fa-paper-plane me-1"></i> Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <p class="text-center mb-0">&copy; 2025 Wilian Perkasa. Semua hak cipta dilindungi.</p>
+        </div>
+        <!-- Floating Decoration -->
+        <div class="floating-decor"></div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-e8d135 back-to-top" aria-label="Kembali ke Atas"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Bootstrap JS dan dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper.js JS untuk Slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Slick Carousel JS untuk Gallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-3hL7Q6bH/6EZ+5DmO5t1Sktwx4+YwsFEL6IhPxFUEboP2+DlGE1Kbj/8fi6D0qV1JsvHy1uF1+4nFHc7HhDrZg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Chart.js untuk Data Visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Lightbox2 JS untuk Galeri Foto -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <!-- Cookie Consent JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js" integrity="sha512-YX1r9JKPhduMo2Q5YBqpiMWXqDFhA1hqGByqW1pHe+WWugxPFPfUfG0q3D0U8VKeqjRU4b4k1C6bg3Gx3Ef5JQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- jQuery (Diperlukan oleh Slick Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+xOHOx3H0Aw/BAHjhIj+cI4jl4Wb4Pq5iZyPH6k=" crossorigin="anonymous"></script>
+
+    <!-- SmoothScroll.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js" integrity="sha512-1xY94xUuKgFO8xk8xVbJjN1S93Y7E1/5pFb5l5D/ljf7jWgTGLv1TqRGgGoYpCEvYdNmK9C6NR6lw42cO1f6ZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Main JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
