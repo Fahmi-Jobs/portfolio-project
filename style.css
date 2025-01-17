@@ -1,0 +1,730 @@
+/* styles.css */
+
+/* Import Google Fonts */
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Skema Warna */
+:root {
+    --color-yellow: #e8d135;
+    --color-red: #ca4e33;
+    --color-blue: #1d5669;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-light-gray: #ced4da;
+    --color-secondary: #2c2c2c;
+}
+
+/* Dark Mode - Default */
+body {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+a {
+    color: var(--color-yellow);
+}
+
+a:hover {
+    color: var(--color-yellow);
+}
+
+/* Navbar */
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--color-white);
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--color-yellow);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--color-yellow) !important;
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    border: none;
+    background: none;
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+#darkModeToggle:hover {
+    color: var(--color-yellow);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    color: var(--color-white);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 86, 105, 0.6);
+    z-index: 0;
+}
+
+.hero-section > div {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-e8d135 {
+    background-color: var(--color-yellow);
+    border-color: var(--color-yellow);
+    color: var(--color-black);
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-e8d135:hover {
+    background-color: var(--color-yellow);
+    border-color: var(--color-yellow);
+    color: var(--color-black);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(232, 209, 53, 0.3);
+}
+
+.btn-ca4e33 {
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+    color: var(--color-white);
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-ca4e33:hover {
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+    color: var(--color-white);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(202, 78, 51, 0.3);
+}
+
+.btn-1d5669 {
+    background-color: var(--color-blue);
+    border-color: var(--color-blue);
+    color: var(--color-white);
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-1d5669:hover {
+    background-color: var(--color-blue);
+    border-color: var(--color-blue);
+    color: var(--color-white);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(29, 86, 105, 0.3);
+}
+
+/* Tentang Kami Enhancements */
+#about h5 {
+    font-size: 1.3rem;
+    color: var(--color-yellow);
+}
+
+#about ul.list-group li {
+    background-color: var(--color-black);
+    border: none;
+    padding: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#about ul.list-group li:hover {
+    transform: translateX(10px);
+    background-color: var(--color-secondary);
+}
+
+#about ul.list-group li i {
+    min-width: 30px;
+    text-align: center;
+}
+
+#about a.btn {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#about a.btn:hover {
+    background-color: var(--color-red);
+    transform: translateY(-5px);
+}
+
+/* Layanan Enhancements */
+.service-box {
+    background-color: var(--color-secondary);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.service-icon {
+    background-color: var(--color-black);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0 auto;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.service-icon:hover {
+    background-color: var(--color-yellow);
+    transform: rotate(10deg);
+}
+
+.service-icon i {
+    color: var(--color-white);
+}
+
+/* Portofolio */
+#portfolio .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#portfolio .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+#portfolio .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+#portfolio .filter-button {
+    margin: 0 5px;
+    font-size: 1rem;
+}
+
+.btn-outline-e8d135 {
+    border-color: var(--color-yellow);
+    color: var(--color-yellow);
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-e8d135.active, .btn-outline-e8d135:focus, .btn-outline-e8d135:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+}
+
+/* Swiper Pagination dan Navigation */
+.swiper-pagination-bullet {
+    background: var(--color-yellow);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--color-yellow);
+}
+
+.swiper-button-next, .swiper-button-prev {
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    background-color: rgba(232, 209, 53, 0.8);
+    border-radius: 50%;
+    color: var(--color-black);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: var(--color-yellow);
+    transform: scale(1.1);
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 1.2rem;
+}
+
+/* Statistik Animations */
+.count {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--color-yellow);
+    position: relative;
+}
+
+.count::after {
+    content: '+';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    font-size: 1.2rem;
+    color: var(--color-yellow);
+}
+
+@media (max-width: 768px) {
+    .count {
+        font-size: 2rem;
+    }
+}
+
+/* Testimoni Enhancements */
+.testimonials-slider {
+    position: relative;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    background-color: rgba(232, 209, 53, 0.8);
+    border-radius: 50%;
+    color: var(--color-black);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: var(--color-yellow);
+    transform: scale(1.1);
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 1.2rem;
+}
+
+/* Blog Enhancements */
+.blog-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.blog-card img {
+    transition: transform 0.3s;
+}
+
+.blog-card:hover img {
+    transform: scale(1.1);
+}
+
+.blog-card .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Galeri Foto Enhancements */
+.photo-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.photo-img {
+    transition: transform 0.3s;
+}
+
+.photo-card:hover .photo-img {
+    transform: scale(1.1);
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(232, 209, 53, 0.6);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s;
+}
+
+.photo-card:hover .photo-overlay {
+    opacity: 1;
+}
+
+/* Video Gallery Enhancements */
+.video-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+.video-card iframe {
+    transition: transform 0.3s;
+}
+
+.video-card:hover iframe {
+    transform: scale(1.05);
+}
+
+/* Data Visualization */
+#data-visualization canvas {
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Kontak Enhancements */
+.contact-form-3d {
+    perspective: 1000px;
+}
+
+.contact-form-3d form {
+    transform: rotateY(0deg);
+    transition: transform 0.6s;
+}
+
+.contact-form-3d:hover form {
+    transform: rotateY(360deg);
+}
+
+.contact-info-3d {
+    perspective: 1000px;
+}
+
+.contact-info-3d .contact-info-content {
+    transform: rotateY(0deg);
+    transition: transform 0.6s;
+}
+
+.contact-info-3d:hover .contact-info-content {
+    transform: rotateY(360deg);
+}
+
+.contact-info-3d p, .contact-info-3d li {
+    font-weight: bold;
+}
+
+.btn-outline-e8d135 {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-outline-e8d135:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.3);
+}
+
+/* Footer Styles */
+footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+footer ul li a {
+    color: var(--color-yellow);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: var(--color-red);
+}
+
+footer .social-icons a {
+    transition: transform 0.3s, color 0.3s;
+}
+
+footer .social-icons a:hover {
+    transform: translateY(-5px);
+    color: var(--color-red);
+}
+
+footer form input::placeholder {
+    color: var(--color-light-gray);
+}
+
+footer form button {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+footer form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(232, 209, 53, 0.3);
+}
+
+/* Floating Decoration */
+.floating-decor {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgba(232, 209, 53, 0.2);
+    border-radius: 50%;
+    animation: float 10s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+}
+
+/* Footer Enhancements */
+footer {
+    position: relative;
+    overflow: hidden;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+footer ul li a {
+    color: var(--color-yellow);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: var(--color-red);
+}
+
+footer .social-icons a {
+    transition: transform 0.3s, color 0.3s;
+}
+
+footer .social-icons a:hover {
+    transform: translateY(-5px);
+    color: var(--color-red);
+}
+
+footer form input::placeholder {
+    color: var(--color-light-gray);
+}
+
+footer form button {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+footer form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(232, 209, 53, 0.3);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    z-index: 99;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1.5rem;
+    transition: opacity 0.3s ease, visibility 0.3s;
+    background-color: var(--color-yellow);
+    border: none;
+    color: var(--color-black);
+}
+
+.back-to-top.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hover Effects for Buttons */
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::after {
+    content: '';
+    position: absolute;
+    left: -50%;
+    top: 0;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    transform: skewX(-45deg);
+}
+
+.btn-primary:hover::after {
+    left: 100%;
+}
+
+/* Button Ripple Effect */
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
+}
+
+/* Card Hover Scale */
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Slick Carousel Customizations */
+.gallery-slider .slick-slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Lightbox Customizations */
+.lightbox-overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Scrollbar Custom */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-secondary); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-yellow); 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-red); 
+}
+
+/* Responsivitas tambahan */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: 70vh;
+    }
+
+    #about .row {
+        flex-direction: column-reverse;
+    }
+
+    .gallery-slider img {
+        height: 200px;
+    }
+
+    #video-gallery iframe {
+        height: 200px;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 10px;
+    }
+
+    .btn-e8d135, .btn-ca4e33, .btn-1d5669 {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Animasi Tambahan */
+.fade-in-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efek Mengambang pada Semua Elemen */
+section {
+    position: relative;
+    z-index: 1;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+    pointer-events: none;
+    backdrop-filter: blur(5px);
+}
+
+.card, .service-box, .contact-info-3d, .contact-form-3d, .blog-card, .photo-card, .video-card {
+    background-color: rgba(44, 44, 44, 0.9); /* Warna abu-abu tua transparan */
+    border: 1px solid rgba(232, 209, 53, 0.3);
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover, .service-box:hover, .contact-info-3d:hover, .contact-form-3d:hover, .blog-card:hover, .photo-card:hover, .video-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.3);
+}
